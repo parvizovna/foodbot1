@@ -48,8 +48,8 @@ def save_food_log(text: str):
 def remind_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
         [
-            InlineKeyboardButton(text="⏰ Напомнить через 3 часа", callback_data="remind_3"),
-            InlineKeyboardButton(text="⏰ Напомнить через 4 часа", callback_data="remind_4"),
+            InlineKeyboardButton(text="⏰ 3 часа", callback_data="remind_3"),
+            InlineKeyboardButton(text="⏰ 4 часа", callback_data="remind_4"),
         ],
         [
             InlineKeyboardButton(text="❌ Не напоминать", callback_data="no_remind")
