@@ -26,4 +26,4 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           OWNER_ID: ${{ secrets.OWNER_ID }}
         run: |
-          run: timeout 300 python foodbot1/bot.py
+          run: timeout 300 python parvizovna/foodbot1/bot.py
