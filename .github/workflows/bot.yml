@@ -19,11 +19,11 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install -r parvizovna/foodbot1/requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Run bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           OWNER_ID: ${{ secrets.OWNER_ID }}
         run: |
-          run: timeout 300 python parvizovna/foodbot1/bot.py
+          run: timeout 300 python bot.py
